@@ -1,3 +1,6 @@
+/* ----- Global Styles ----- */
+
+/* Navigation Bar*/
 body {
   margin: 0;
   padding: 0;
@@ -80,3 +83,11 @@ nav li.active a {
   line-height: 1.5;
   color: #333;
 }
+
+/* ----- Home Styles ----- */
+
+
+/* ----- Journal Styles ----- */
+
+
+/* ----- Membership Styles ----- */
