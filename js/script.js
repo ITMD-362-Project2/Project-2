@@ -26,8 +26,6 @@ function handleSlideshow() {
   };
 }
 handleSlideshow();
-
-
 // Get the donate button and donation popup elements
 const donateButton = document.getElementById("donate-button");
 const popupContainer = document.getElementById("popup-container");
