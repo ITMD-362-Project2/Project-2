@@ -1,8 +1,5 @@
-// Get the button element
-const button = document.getElementById("convert-to-button");
-
-// Event listener to the button
-button.addEventListener("click", function() {
+// Function to handle the button click
+function handleButtonClick() {
   // Popup container element
   const popupContainer = document.createElement("div");
   popupContainer.classList.add("popup-container");
@@ -41,4 +38,36 @@ button.addEventListener("click", function() {
 
   // Add the popup to the page
   document.body.appendChild(popupContainer);
-});
+}
+
+// Function to handle the slideshow
+function handleSlideshow() {
+  const images = document.querySelectorAll('#index-slideshow img');
+  let index = 0;
+
+  // Preload images
+  function preloadImages() {
+    for (let i = 0; i < images.length; i++) {
+      new Image().src = images[i].src;
+    }
+  }
+
+  // Show the next image
+  function showNextImage() {
+    images[index].style.opacity = '0';
+    index = (index + 1) % images.length;
+    images[index].style.opacity = '1';
+    setTimeout(showNextImage, 5000); // Change image every 5 seconds
+  }
+
+  // Preload images and start slideshow when done
+  window.onload = function() {
+    preloadImages();
+    images[0].style.opacity = '1'; // Show first image
+    setTimeout(showNextImage, 3000); // Change image every 5 seconds
+  };
+}
+
+// Call the functions separately
+handleButtonClick();
+handleSlideshow();
