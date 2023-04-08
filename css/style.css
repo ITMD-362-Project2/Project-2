@@ -1,11 +1,477 @@
 /* ----- Global Styles ----- */
 
-/* Navigation Bar*/
-body {
+/* Navigation Bar */
+/* body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  font-size: 16px;
+  }
+   */
+  header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to top, #002e5d 0%, #2b6ca3 50%, #2b6ca3 100%);
+  color: #fff;
+  padding: 0.2rem;
+  height: 10rem;
+  }
+  
+  .logo-container {
+  display:flex;
+  align-items: center;
+  }
+  
+  .logo-container img {
+  width: 7rem;
+  height: auto;
+  padding-left: 1rem;
+  }
+  
+  .logo-container h1 {
+  font-size: 1.4rem;
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  color: #B0E0E6;
+  }
+  
+  nav {
+  display: flex;
+  justify-content: center;
+  background-color: darkgoldenrod;
+  padding: 0.1rem 0;
+  }
+  
+  nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display:block;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  nav li {
+  margin: 0 0.5rem;
+  border-bottom: 0.2rem solid #000000;
+  position:relative;
+  }
+  
+  nav li:last-child {
+  border-right: none;
+  }
+  
+  nav li a {
+  display: block;
+  color: white;
+  padding: 0.5rem ;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 300;
+  }
+  
+  nav li.active {
+  background-color: #002e5d;
+  }
+  
+  nav li.active a {
+  color: #fff;
+  }
+  
+  /* Footer */
+  footer {
+  background-color: #2b6ca3;
+  padding: 0.2rem;
+  text-align: center;
+  height: 5rem;
+  
+  }
+  #social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  #social-links img {
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem;
+  }
+
+/* ----- Home Styles ----- */
+
+#index-body{
+  background-color: black;
 }
+
+#index-slideshow {
+  padding: 5rem 1rem;
+  position:relative;
+  height: 10rem; /* updated for mobile */
+  margin: 0 auto; 
+  max-width: 100%; /* updated for mobile */
+  border-radius: 5rem;
+  border: #2b6ca3;
+}
+
+#index-slideshow img {
+  position: absolute;
+  height: 18rem;
+  width: 22rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+#index-slideshow img.slide {
+  opacity: 1;
+}
+
+#about-us{
+  margin: 0 auto;
+  max-width: 100%; /* updated for mobile */
+  padding: 10px;
+  border-radius: 1.25rem;
+  background-color: lightseagreen;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+#about-us h1{
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+  font-size: 24px; /* updated for mobile */
+  margin-top: 0;
+  padding-top: 20px;
+  padding-bottom: 0.5rem;
+  color: #333;
+}
+
+#about-us p{
+  padding: 10px;
+  text-align: center;
+  font-family:'Noto Serif Khojki', serif;
+  font-size: 13px; /* updated for mobile */
+  background-color: #fff;
+  color: #555;
+  border-radius: 1.25rem;
+  line-height: 1.5;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+#about-us h2{
+  padding-left: 0.5rem;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+  font-family: 'Special Elite', cursive;
+  text-align: left;
+  font-size: 20px; /* updated for mobile */
+  color: #333;
+}
+
+#about-us-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px; /* updated for mobile */
+  color: #555;
+  margin-left: 3rem;
+  color: navy;
+  font-weight:400;
+}
+
+#about-us-bullets li{
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#about-us-bullets li:before {
+  content: '\25CF'; /* Unicode character for bullet */
+  display: inline-block;
+  margin-right: 10px;
+  color: #444;
+  position: absolute;
+  left: -20px;
+  top: 5px;
+  font-size: 14px;
+}
+
+#about-us-bullets li:last-child{
+  margin-bottom: 0;
+}
+
+#about-us-bullets li a{
+  color: #777;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+#about-us-bullets li a:hover{
+  color: #333;
+}
+
+/* ----- Journal Styles ----- */
+
+/* ----- Membership Styles ----- */
+#donate-button {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: auto;
+}
+
+#popup-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#popup {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px grey;
+}
+
+#popup h2 {
+  margin-top: 0;
+}
+
+#popup form {
+  display: flex;
+  flex-direction: column;
+}
+
+#popup input[type="text"] {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+#popup button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  flex: 1;
+}
+
+#popup button:first-child {
+  margin-right: 5px;
+}
+
+#popup button:last-child {
+  margin-left: 5px;
+}
+
+#popup button:hover {
+  background-color: black;
+  color: white;
+}
+
+#close-button {
+  margin-right: auto;
+  align-self: flex-end;
+}
+
+#paypal-button {
+  margin-left: auto;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+/* Media queries when the screen gets larger */
+@media screen and (min-width: 630px) {
+  /* ----- Global Styles ----- */
+
+/* Navigation Bar*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to top, #002e5d 0%, #2b6ca3 50%, #2b6ca3 100%);
+  color: #fff;
+  padding: 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 150px;
+  height: 149px;
+  padding-left: 0.1rem;
+}
+
+.logo-container h1 {
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.5rem;
+  color: #B0E0E6;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #2b6ca3;
+  padding: 5px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 5px;
+  border-right: 1px solid #fff;
+  position: relative;
+}
+
+
+
+nav li.active {
+  background-color: #002e5d;
+}
+
+/* Footer */
+footer {
+  margin-top: 1.0rem;
+  background-color: #2b6ca3;
+  padding: 40px;
+  text-align: center;
+}
+
+/* ----- Home Styles ----- */
+
+#index-slideshow {
+  padding: 5rem 1rem;
+  position: relative;
+  height: 400px;
+  margin: 0 auto;  
+}
+
+#index-slideshow img {
+  position: absolute;
+  margin-left: 60px;
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+#index-slideshow img.slide {
+  opacity: 1;
+}
+
+
+
+/* ----- Journal Styles ----- */
+
+
+/* ----- Membership Styles ----- */
+#donate-button {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: auto;
+}
+
+#popup-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#popup {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px grey;
+}
+
+#popup h2 {
+  margin-top: 0;
+}
+
+#popup form {
+  display: flex;
+  flex-direction: column;
+}
+
+#popup input[type="text"] {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+#popup button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  flex: 1;
+}
+
+#popup button:first-child {
+  margin-right: 5px;
+}
+
+#popup button:last-child {
+  margin-left: 5px;
+}
+
+#popup button:hover {
+  background-color: black;
+  color: white;
+}
+
+#close-button {
+  margin-right: auto;
+  align-self: flex-end;
+}
+
+#paypal-button {
+  margin-left: auto;
+  align-self: flex-end;
+  margin-top: auto;
+}
+  
+}
+
+/* Media queries when the screen gets even larger */
+
+@media screen and (min-width: 720px) {
+/* ----- Global Styles ----- */
+
+/* Navigation Bar*/
 
 header {
   display: flex;
@@ -24,12 +490,14 @@ header {
 
 .logo-container img {
   width: 200px;
+  height: 199px;
 }
 
 .logo-container h1 {
   margin: 0;
-  padding-left: 10px;
-  font-weight: bold;
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.5rem;
   color: #B0E0E6;
 }
 
@@ -86,8 +554,9 @@ nav li.active a {
 
 /* Footer */
 footer {
+  margin-top: 1.0rem;
   background-color: #2b6ca3;
-  padding: 60px;
+  padding: 50px;
   text-align: center;
 }
  
@@ -136,6 +605,7 @@ footer {
   border-radius: 1.25rem;
   background-color: lightseagreen;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1.0rem;
 }
 
 #about-us h1{
@@ -288,3 +758,9 @@ footer {
   align-self: flex-end;
   margin-top: auto;
 }
+
+}
+
+
+
+
