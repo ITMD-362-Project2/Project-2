@@ -6,6 +6,7 @@
     <link rel="stylesheet" media="screen" href="css/style.css">
   </head>
   <body>
+    <!-- Header -->
     <header>
       <div class="logo-container">
         <img src="images/logo.jpg" alt="ISUD Logo">
@@ -19,10 +20,39 @@
         </ul>
       </nav>
     </header>
-    <div class="content">
-      <h1>Welcome to our Membership Page!</h1>
-      <p>Here you can find information about our membership program and how to sign up.</p>
+	
+	<!-- Content -->
+    <main class="content">
+      <h1>Join or support the society today!</h1>
+      <h3>Applying for Membership:</h3> 
+	  <p>To become a member, please contact the ISUD Secretary, Robert Allinson, via email at: <a href="mailto:rallinson@soka.edu">rallinson@soka.edu</a> with a short bio. There is no entry fee in becoming a member.</p>
+      <h3>Annual Membership Fee:</h3>
+	  <p>The annual membership fee is 10 USD, or equivalent, per year. Membership fees much be paid <strong>at least every two years</strong>, for a total of $20 USD or equivalent.</p>
+	  <p>The membership fee can be paid through the ISUD website using PayPal, credit card, or bank transfer. To pay your membership fee, click the "Donate" button below.</p>
+	  <button id="donate-btn">Donate now</button>
+	</main>
+	
+	<!-- Footer -->
+	<footer>
+      <div id = "social-links">
+        <a href="https://www.facebook.com"><img src="images/facebook.jpg" alt="Facebook"></a>
+        <a href="https://www.linkedin.com/in/imopgr/"><img src="images/linkedin.jpg" alt="linkedin"></a>
+        <a href="https://www.youtube.com/watch?v=sF5n78x9LgE&ab_channel=PawelKuczynski"><img src="images/yt.jpg" alt="Youtube"></a>
+      </div>
+    </footer>
+	
+	<!-- Donation Popup -->
+	<div id="popup-container">
+      <div id="popup">
+        <h2>Enter donation amount:</h2>
+        <form>
+          <input type="text" id="amount" placeholder="$0.00">
+          <br><br>
+          <button type="button" id="cancel-btn">Cancel</button>
+          <button type="button" id="pay-btn">Pay with PayPal</button>
+        </form>
+      </div>
     </div>
-    <script src="js/membership.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
