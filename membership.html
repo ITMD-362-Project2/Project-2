@@ -4,6 +4,7 @@
     <title>Membership | ISUD</title>
 	<link rel="stylesheet" media="screen" href="css/meyers_and_normalize-form.css">
     <link rel="stylesheet" media="screen" href="css/style.css">
+	<script async src="js/membership.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -29,7 +30,7 @@
       <h3>Annual Membership Fee:</h3>
 	  <p>The annual membership fee is 10 USD, or equivalent, per year. Membership fees much be paid <strong>at least every two years</strong>, for a total of $20 USD or equivalent.</p>
 	  <p>The membership fee can be paid through the ISUD website using PayPal, credit card, or bank transfer. To pay your membership fee, click the "Donate" button below.</p>
-	  <button id="donate-btn">Donate now</button>
+	  <img id="donate-button" src="images/donate.jpg" onclick="handleButtonClick()" alt="Donate Now">
 	</main>
 	
 	<!-- Footer -->
@@ -46,10 +47,10 @@
       <div id="popup">
         <h2>Enter donation amount:</h2>
         <form>
-          <input type="text" id="amount" placeholder="$0.00">
+          <input type="text" id="contribution-input" placeholder="$0.00">
           <br><br>
-          <button type="button" id="cancel-btn">Cancel</button>
-          <button type="button" id="pay-btn">Pay with PayPal</button>
+          <button type="button" id="close-button">Cancel</button>
+          <button type="button" id="paypal-button">Pay with PayPal</button>
         </form>
       </div>
     </div>
