@@ -1,45 +1,3 @@
-// Function to handle the button click
-function handleButtonClick() {
-  // Popup container element
-  const popupContainer = document.createElement("div");
-  popupContainer.classList.add("popup-container");
-
-  // Popup element
-  const popup = document.createElement("div");
-  popup.classList.add("popup");
-
-  // Close button element
-  const closeButton = document.createElement("button");
-  closeButton.classList.add("close-button");
-  closeButton.innerText = "Cancel";
-
-  // Event listener to the close button to remove the popup
-  closeButton.addEventListener("click", function() {
-    popupContainer.remove();
-  });
-
-  // PayPal button element
-  const paypalButton = document.createElement("a");
-  paypalButton.href = "https://www.paypal.com";
-  paypalButton.classList.add("paypal-button");
-  paypalButton.innerText = "Pay with PayPal";
-
-  // Input element for the contribution amount
-  const input = document.createElement("input");
-  input.type = "text";
-  input.placeholder = "$0.00";
-  input.classList.add("contribution-input");
-
-  // Append the elements to the popup
-  popup.appendChild(closeButton);
-  popup.appendChild(paypalButton);
-  popup.appendChild(input);
-  popupContainer.appendChild(popup);
-
-  // Add the popup to the page
-  document.body.appendChild(popupContainer);
-}
-
 // Function to handle the slideshow
 function handleSlideshow() {
   const images = document.querySelectorAll('#index-slideshow img');
@@ -57,7 +15,7 @@ function handleSlideshow() {
     images[index].style.opacity = '0';
     index = (index + 1) % images.length;
     images[index].style.opacity = '1';
-    setTimeout(showNextImage, 5000); // Change image every 5 seconds
+    setTimeout(showNextImage, 3000); // Change image every 5 seconds
   }
 
   // Preload images and start slideshow when done
@@ -67,7 +25,38 @@ function handleSlideshow() {
     setTimeout(showNextImage, 3000); // Change image every 5 seconds
   };
 }
+handleSlideshow();
+// Get the donate button and donation popup elements
+const donateButton = document.getElementById("donate-button");
+const popupContainer = document.getElementById("popup-container");
+const closeButton = document.getElementById("close-button");
+const paypalButton = document.getElementById("paypal-button");
 
+// Add click event listener to the donate button to show the popup
+donateButton.addEventListener("click", showPopup);
+
+// Add click event listener to the close button to hide the popup
+closeButton.addEventListener("click", hidePopup);
+
+// Add click event listener to the PayPal button to process the donation
+paypalButton.addEventListener("click", processDonation);
+
+// Function to show the donation popup
+function showPopup() {
+  popupContainer.style.display = "flex";
+}
+
+// Function to hide the donation popup
+function hidePopup() {
+  popupContainer.style.display = "none";
+}
+
+// Function to process the donation
+function processDonation() {
+  const amount = document.getElementById("contribution-input").value;
+  // TODO: Implement donation processing logic here
+  alert("Thank you for your donation of " + amount + "!");
+  hidePopup();
+}
 // Call the functions separately
 handleButtonClick();
-handleSlideshow();
