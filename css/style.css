@@ -565,6 +565,13 @@ footer {
   margin: 0 10px;
 }
 
+@media only screen and (max-width: 720px) {
+  #dialogue img {
+    width: 80%;
+    height: 90%;
+  }
+}
+
 /* ----- Home Styles ----- */
 #index-slideshow {
   padding: 5rem 1rem;
