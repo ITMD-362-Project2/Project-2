@@ -8,6 +8,35 @@
   font-size: 16px;
   }
    */
+   .hamburger {
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    margin-left: 1.5rem;
+  }
+  
+  .hamburger-line {
+    background-color: white;
+    width: 100%;
+    height: 2px;
+    margin: 3px 0;
+  }
+  
+  /* Hide the nav menu items by default */
+  #index-navbar-container {
+    display: none;
+  }
+  
+  /* Show the nav menu items when the menu is active */
+  #index-navbar-container.active {
+    display: flex;
+  }
    header {
     display: block;
     background-image: linear-gradient(to top, #002e5d 0%, #2b6ca3 50%, #2b6ca3 100%);
@@ -32,7 +61,7 @@
 
   .logo-container h1 {
     font-size: 1.4rem;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Space Grotesk', Arial, sans-serif;
     color: #B0E0E6;
   }
   
@@ -71,9 +100,14 @@
     font-size: 1rem;
     font-weight: 300;
   }
+  nav li a:hover {
+    background-color: #002e5d;
+    color: #B0E0E6;
+  }
   
   nav li.active {
     background-color: #002e5d;
+    color: #B0E0E6;
   }
   
   nav li.active a {
@@ -142,7 +176,7 @@ body{
 }
 
 #about-us h1{
-  font-family: 'Special Elite', cursive;
+  font-family: 'Special Elite', 'Comic Sans MS', cursive;
   text-align: center;
   font-size: 24px; /* updated for mobile */
   margin-top: 0;
@@ -154,7 +188,7 @@ body{
 #about-us p{
   padding: 10px;
   text-align: center;
-  font-family:'Noto Serif Khojki', serif;
+  font-family:'Noto Serif Khojki', Georgia, serif;
   font-size: 13px; /* updated for mobile */
   background-color: #fff;
   color: #555;
@@ -167,7 +201,7 @@ body{
   padding-left: 0.5rem;
   margin-top: 1rem;
   padding-bottom: 0.5rem;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Special Elite', 'Comic Sans MS', cursive;
   text-align: left;
   font-size: 20px; /* updated for mobile */
   color: #333;
@@ -576,7 +610,6 @@ footer {
 #about-us p{
   padding: 10px 20px;
   text-align: justify;
-  font-family:'Noto Serif Khojki', serif;
   font-size: 18px;
   background-color: #fff;
   color: #555;
@@ -587,7 +620,6 @@ footer {
 
 #about-us h2{
   padding: 10px 20px;
-  font-family: 'Special Elite', cursive;
   text-align: left;
   font-size: 30px;
   margin-top: 40px;
@@ -598,7 +630,6 @@ footer {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
   color: #555;
   margin-left: 20px;

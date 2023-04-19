@@ -2,8 +2,13 @@
 <html lang = "en" class = "nojs">
   <head>
     <title>Membership | ISUD</title>
-	<link rel="stylesheet" media="screen" href="css/meyers_and_normalize-form.css">
+	  <link rel="stylesheet" media="screen" href="css/meyers_and_normalize-form.css">
     <link rel="stylesheet" media="screen" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
 	<script async src="js/membership.js"></script>
   </head>
   <body>
@@ -14,11 +19,18 @@
         <h1>International Society for Universal Dialogue</h1>
       </div>
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-		      <li><a href="journal.html">ISUD Journal</a></li>
-          <li class="active"><a href="membership.html">Membership</a></li>
-        </ul>
+        <button class="hamburger" onclick="toggleHamburger()">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+        <div id="index-navbar-container">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="journal.html">ISUD Journal</a></li>
+            <li class="active"><a href="membership.html">Membership</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 	
