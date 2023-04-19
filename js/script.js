@@ -60,3 +60,8 @@ function processDonation() {
 }
 // Call the functions separately
 handleButtonClick();
+
+function toggleHamburger() {
+  const navbarContainer = document.getElementById('index-navbar-container');
+  navbarContainer.classList.toggle('active');
+}
