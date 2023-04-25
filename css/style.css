@@ -669,13 +669,14 @@ footer {
 }
 
 /* ----- Journal Styles ----- */
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 600px) {
   #dialogue img {
-    width: 700px;
+    width: 550px;
     height: auto;
-    max-width: 100%;
+    max-width: 80%;
   }
 }
+
 
 /* ----- Membership Styles ----- */
 #donate-button {
