@@ -669,12 +669,10 @@ footer {
 }
 
 /* ----- Journal Styles ----- */
-@media only screen and (max-width: 600px) {
-  #dialogue img {
-    width: 550px;
-    height: auto;
-    max-width: 80%;
-  }
+#dialogue img {
+  width: 650px;
+  height: auto;
+  max-width: 80%;
 }
 
 
