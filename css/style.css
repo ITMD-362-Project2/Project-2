@@ -675,6 +675,13 @@ footer {
   max-width: 80%;
 }
 
+@media screen and (max-width: 630px) {
+  #dialogue img {
+    width: 500px;
+    height: auto;
+    max-width: 80%;
+  }
+}
 
 /* ----- Membership Styles ----- */
 #donate-button {
