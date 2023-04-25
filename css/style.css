@@ -565,13 +565,6 @@ footer {
   margin: 0 10px;
 }
 
-@media only screen and (max-width: 720px) {
-  #dialogue img {
-    width: 20rem;
-    height: 24rem;
-    max-width: 100%;
-  }
-}
 
 /* ----- Home Styles ----- */
 #index-slideshow {
@@ -676,6 +669,11 @@ footer {
 }
 
 /* ----- Journal Styles ----- */
+#dialogue img {
+  width: 650px;
+  height: auto;
+  max-width: 80%;
+}
 
 
 /* ----- Membership Styles ----- */
