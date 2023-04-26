@@ -247,6 +247,11 @@ body{
 }
 
 /* ----- Journal Styles ----- */
+#dialogue img {
+  width: 500px;
+  height: auto;
+  max-width: 80%;
+}
 
 /* ----- Membership Styles ----- */
 #donate-button {
@@ -390,7 +395,11 @@ footer {
 
 
 /* ----- Journal Styles ----- */
-
+#dialogue img {
+  width: 700px;
+  height: auto;
+  max-width: 80%;
+}
 
 /* ----- Membership Styles ----- */
 #donate-button {
@@ -562,13 +571,6 @@ footer {
   margin: 0 10px;
 }
 
-@media only screen and (max-width: 720px) {
-  #dialogue img {
-    width: 20rem;
-    height: 24rem;
-    max-width: 100%;
-  }
-}
 
 /* ----- Home Styles ----- */
 #index-slideshow {
@@ -673,6 +675,11 @@ footer {
 }
 
 /* ----- Journal Styles ----- */
+#dialogue img {
+  width: 800px;
+  height: auto;
+  max-width: 80%;
+}
 
 
 /* ----- Membership Styles ----- */
