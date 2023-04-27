@@ -1,6 +1,7 @@
 /* ----- Global Styles ----- */
 
 /* Navigation Bar */
+
    .hamburger {
     cursor: pointer;
     background: none;
@@ -13,7 +14,7 @@
     height: 30px;
     margin-left: 1.5rem;
   }
-  
+
   .hamburger-line {
     background-color: white;
     width: 100%;
@@ -254,13 +255,28 @@ body{
 }
 
 /* ----- Membership Styles ----- */
+
 #donate-button {
   display: block;
   margin-top: 3em;
   margin-bottom: 2em;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   height: auto;
+  
+  background-color: white;
+  color: darkblue;
+  padding: 16px 25px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#donate-button:hover {
+  background-color: #ffa64d;
 }
 
 #popup-container {
@@ -906,6 +922,8 @@ footer {
   font-size: 30px;
   margin-top: 40px;
   color: #333;
+}
+
 }
 
 }
