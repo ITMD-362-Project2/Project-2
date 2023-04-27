@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang = "en" class = "nojs">
+<html lang="en" class="nojs">
   <head>
     <title>Membership | ISUD</title>
-	  <link rel="stylesheet" media="screen" href="css/meyers_and_normalize-form_reset.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="css/meyers_and_normalize-form_reset.css">
     <link rel="stylesheet" media="screen" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki&family=Special+Elite&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
-	<script async src="js/membership.js"></script>
+    <script async src="js/membership.js"></script>
   </head>
+  
   <body>
     <!-- Header -->
     <header>
@@ -33,37 +35,40 @@
         </div>
       </nav>
     </header>
-	
-	<!-- Content -->
+    <!-- Content -->
     <main class="content">
-      <h1>Join or support the society today!</h1>
-      <h3>Applying for Membership:</h3> 
-	  <p>To become a member, please contact the ISUD Secretary, Robert Allinson, via email at: <a href="mailto:rallinson@soka.edu">rallinson@soka.edu</a> with a short bio. There is no entry fee in becoming a member.</p>
-      <h3>Annual Membership Fee:</h3>
-	  <p>The annual membership fee is 10 USD, or equivalent, per year. Membership fees much be paid <strong>at least every two years</strong>, for a total of $20 USD or equivalent.</p>
-	  <p>The membership fee can be paid through the ISUD website using PayPal, credit card, or bank transfer. To pay your membership fee, click the "Donate" button below.</p>
-	  <img id="donate-button" src="images/donate.jpg" onclick="handleButtonClick()" alt="Donate Now">
-	</main>
-	
-	<!-- Footer -->
-	<footer>
-      <div id = "social-links">
+      <div id="why-donate">
+        <h1>Join or support the society today!</h1>
+        <h2>Applying for Membership:</h2> 
+        <p>To become a member, please contact the ISUD Secretary, Robert Allinson, via email at: <a href="mailto:rallinson@soka.edu">rallinson@soka.edu</a> with a short bio. There is no entry fee in becoming a member.</p>
+        <h2>Annual Membership Fee:</h2>
+          <p>The annual membership fee is 10 USD, or equivalent, per year. Membership fees much be paid at least every two years, for a total of $20 USD or equivalent.
+          The membership fee can be paid through the ISUD website using PayPal, credit card, or bank transfer. To pay your membership fee, click the "Donate" button below.
+          </p>
+        <img id="donate-button" src="images/donate.png" onclick="handleButtonClick()" alt="Donate Now">
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div id="social-links">
         <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
         <a href="https://www.linkedin.com/in/imopgr/"><img src="images/linkedin.png" alt="linkedin"></a>
         <a href="https://www.youtube.com/watch?v=sF5n78x9LgE&ab_channel=PawelKuczynski"><img src="images/yt.png" alt="Youtube"></a>
       </div>
     </footer>
-	
-	<!-- Donation Popup -->
-	<div id="popup-container">
+    <!-- Donation Popup -->
+    <div id="popup-container">
       <div id="popup">
+	    <p>Your donation furthers our mission of spreading universal dialogue for culture, humanity, 
+		diversity, and peace.
         <h2>Enter donation amount:</h2>
-        <form>
-          <input type="text" id="contribution-input" placeholder="$0.00">
-          <br><br>
-          <button type="button" id="close-button">Cancel</button>
-          <button type="button" id="paypal-button">Pay with PayPal</button>
-        </form>
+          <form method="GET" action="#">
+            <input type="text" id="contribution-input" placeholder="$0.00">
+			<div id="btn-container">
+              <button type="button" id="close-button">Cancel</button>
+			  <button type="submit" id="paypal-button">Pay with PayPal</button>
+			</div>
+          </form>
       </div>
     </div>
     <script src="js/script.js"></script>
