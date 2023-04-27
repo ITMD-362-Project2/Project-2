@@ -55,7 +55,7 @@ function hidePopup() {
 function processDonation() {
   const amount = document.getElementById("contribution-input").value;
   // TODO: Implement donation processing logic here
-  alert("Thank you for your donation of " + amount + "!");
+  alert("Thank you for your donation of $" + amount + "!");
   hidePopup();
 }
 // Call the functions separately

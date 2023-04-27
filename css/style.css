@@ -1,13 +1,6 @@
 /* ----- Global Styles ----- */
 
 /* Navigation Bar */
-/* body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  }
-   */
    .hamburger {
     cursor: pointer;
     background: none;
@@ -139,6 +132,10 @@
 
 body{
   background-color: lightcyan;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
 }
 
 #index-slideshow {
@@ -259,8 +256,10 @@ body{
 /* ----- Membership Styles ----- */
 #donate-button {
   display: block;
-  margin: 0 auto;
-  width: 200px;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  width: 100%;
+  max-width: 400px;
   height: auto;
 }
 
@@ -283,10 +282,23 @@ body{
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px grey;
+  width: 90%;
+  max-width: 400px;
+}
+
+#popup p {
+  font-family: 'Noto Serif Khojki', Georgia, serif;
+  margin-bottom: 20px;
+  background-color: #002e5d;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5%;
+  text-align: center;
 }
 
 #popup h2 {
   margin-top: 0;
+  text-align: center;
 }
 
 #popup form {
@@ -295,8 +307,11 @@ body{
 }
 
 #popup input[type="text"] {
+  margin-top: 10px;
   margin-bottom: 10px;
   padding: 5px;
+  text-align: center;
+  border-radius: 5px;
 }
 
 #popup button {
@@ -306,6 +321,8 @@ body{
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
   flex: 1;
+  display: inline-block;
+  width: 100%;
 }
 
 #popup button:first-child {
@@ -321,15 +338,61 @@ body{
   color: white;
 }
 
+#btn-container {
+    display: flex;
+	align-items: center;
+  }
+
 #close-button {
-  margin-right: auto;
-  align-self: flex-end;
+  margin-top: auto;
 }
 
 #paypal-button {
-  margin-left: auto;
-  align-self: flex-end;
   margin-top: auto;
+  background-color: #0070ba;
+  color: #fff;
+}
+
+#why-donate{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 100%; /* updated for mobile */
+  padding: 10px;
+  border-radius: 1.25rem;
+  background-color: lightseagreen;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+#why-donate h1{
+  font-family: 'Special Elite', 'Comic Sans MS', cursive;
+  text-align: center;
+  font-size: 24px; /* updated for mobile */
+  margin-top: 0;
+  padding-top: 20px;
+  padding-bottom: 0.5rem;
+  color: #333;
+}
+
+#why-donate p{
+  padding: 10px;
+  text-align: center;
+  font-family:'Noto Serif Khojki', Georgia, serif;
+  font-size: 13px; /* updated for mobile */
+  background-color: #fff;
+  color: #555;
+  border-radius: 1.25rem;
+  line-height: 1.5;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+#why-donate h2{
+  padding-left: 0.5rem;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+  font-family: 'Special Elite', 'Comic Sans MS', cursive;
+  text-align: left;
+  font-size: 20px; /* updated for mobile */
+  color: #333;
 }
 
 /* Media queries when the screen gets larger */
@@ -407,8 +470,10 @@ footer {
 /* ----- Membership Styles ----- */
 #donate-button {
   display: block;
-  margin: 0 auto;
-  width: 200px;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  width: 100%;
+  max-width: 400px;
   height: auto;
 }
 
@@ -425,26 +490,43 @@ footer {
 }
 
 #popup {
+  align-items: center;
   display: flex;
   flex-direction: column;
   background-color: white;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px grey;
+  width: 90%;
+  max-width: 400px;
+}
+
+#popup p {
+  font-family: 'Noto Serif Khojki', Georgia, serif;
+  margin-bottom: 20px;
+  background-color: #002e5d;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5%;
+  text-align: center;
 }
 
 #popup h2 {
   margin-top: 0;
+  text-align: center;
 }
 
 #popup form {
   display: flex;
   flex-direction: column;
+  width: 90%;
 }
 
 #popup input[type="text"] {
   margin-bottom: 10px;
   padding: 5px;
+  text-align: center;
+  border-radius: 5px;
 }
 
 #popup button {
@@ -454,6 +536,7 @@ footer {
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
   flex: 1;
+  display: inline-block;
 }
 
 #popup button:first-child {
@@ -469,17 +552,19 @@ footer {
   color: white;
 }
 
+#btn-container {
+  display: flex;
+  align-items: center;
+}
+
 #close-button {
-  margin-right: auto;
-  align-self: flex-end;
+  margin-top: auto;
 }
 
 #paypal-button {
-  margin-left: auto;
-  align-self: flex-end;
   margin-top: auto;
-}
-  
+  background-color: #0070ba;
+  color: #fff;
 }
 
 /* Media queries when the screen gets even larger */
@@ -688,9 +773,13 @@ footer {
 /* ----- Membership Styles ----- */
 #donate-button {
   display: block;
-  margin: 0 auto;
-  width: 200px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 80%;
+  max-width: 400px;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #popup-container {
@@ -712,10 +801,23 @@ footer {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px grey;
+  width: 90%;
+  max-width: 400px;
+}
+
+#popup p {
+  font-family: 'Noto Serif Khojki', Georgia, serif;
+  margin-bottom: 20px;
+  background-color: #002e5d;
+  border-radius: 5px;
+  color: #fff;
+  padding: 5%;
+  text-align: center;
 }
 
 #popup h2 {
   margin-top: 0;
+  text-align: center;
 }
 
 #popup form {
@@ -726,6 +828,8 @@ footer {
 #popup input[type="text"] {
   margin-bottom: 10px;
   padding: 5px;
+  text-align: center;
+  border-radius: 5px;
 }
 
 #popup button {
@@ -735,6 +839,7 @@ footer {
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
   flex: 1;
+  display: inline-block;
 }
 
 #popup button:first-child {
@@ -750,18 +855,57 @@ footer {
   color: white;
 }
 
-#close-button {
-  margin-right: auto;
-  align-self: flex-end;
+#btn-container {
+  display: flex;
+  align-items: center;
 }
 
-#paypal-button {
-  margin-left: auto;
-  align-self: flex-end;
+#close-button {
   margin-top: auto;
 }
 
+#paypal-button {
+  margin-top: auto;
+  background-color: #0070ba;
+  color: #fff;
 }
 
+#why-donate{
+  margin: 1rem auto;
+  max-width: 800px; 
+  padding: 16px;
+  border-radius: 1.25rem;
+  background-color: lightseagreen;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1.0rem;
+}
 
+#why-donate h1{
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0;
+  padding-top: 20px;
+  color: #333;
+}
 
+#why-donate p{
+  padding: 10px 20px;
+  text-align: justify;
+  font-size: 18px;
+  background-color: #fff;
+  color: #555;
+  border-radius: 1.25rem;
+  line-height: 1.5;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+#why-donate h2{
+  padding: 10px 20px;
+  text-align: left;
+  font-size: 30px;
+  margin-top: 40px;
+  color: #333;
+}
+
+}
