@@ -8,7 +8,6 @@ For this project, we undertook the challenge of redesigning the [Worldialogue](h
 
 - [Features](#features)
 - [Tech Stack](#tech-stack)
-- [Installation](#installation)
 - [Contributors](#contributors)
 - [Links](#links)
 
