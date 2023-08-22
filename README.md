@@ -42,7 +42,7 @@ For this project, we undertook the challenge of redesigning the [Worldialogue](h
 
 ## Links
 
-- [Live Site](https://itmd-362-project2.github.io/Project-2/membership.html)
+- [Live Site](https://itmd-362-project2.github.io/Project-2/index.html)
 - [Original Worldialogue Site](https://www.worldialogue.org/)
 
 
